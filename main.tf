@@ -1,13 +1,13 @@
 resource "aws_cloudfront_distribution" "example" {
    origin {
-      domain_name = "stellajohnwqer2021.s3.us-east-2.amazonaws.com"
-      origin_id   = "stellajohnwqer2021.s3.us-east-2.amazonaws.com"
+      domain_name = "stellajohnwqer2022.s3.us-east-2.amazonaws.com"
+      origin_id   = "stellajohnwqer2022.s3.us-east-2.amazonaws.com"
  }
   enabled             = true
  default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "stellajohnwqer2021.s3.us-east-2.amazonaws.com"
+    target_origin_id = "stellajohnwqer2022.s3.us-east-2.amazonaws.com"
 
    viewer_protocol_policy = "allow-all"
     forwarded_values {
